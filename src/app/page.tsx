@@ -8,7 +8,7 @@ export default function Home() {
   const [answer, setAnswer] = useState('');
 
   const askQuestion = async () => {
-    const res = await axios.post('http://127.0.0.1:5000/ask', { question });
+    const res = await axios.post('optionally-humble-mammoth.ngrok-free.app/ask', { question });
     setAnswer(res.data.answer);
   };
   return (
