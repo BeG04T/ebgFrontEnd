@@ -8,7 +8,7 @@ export default function Home() {
   const [answer, setAnswer] = useState('');
 
   const askQuestion = async () => {
-    const res = await axios.post('optionally-humble-mammoth.ngrok-free.app/ask', { question });
+    const res = await axios.post('https://optionally-humble-mammoth.ngrok-free.app/ask', { question });
     setAnswer(res.data.answer);
   };
   return (
